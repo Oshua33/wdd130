@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+/* Limit the page width by combining the header, main, and footer elements and center the content on the display using an auto left-right margin  */
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: steelblue;
+
+}
+
+nav a{
+    
+    color: #fff;
+    display: block;
+    padding: 5px;
+}
+/* 
+div {
+    position: relative;
+} */
+
+/* stye with absolute  step 4 not finish*/
+article {
+    position: absolute;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* step 3 */
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+}
+
+ .hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff; 
+}
+
+/* step 5 -- not finish */
+.hero article img {
+    float: right;
+    width: 125px;
+    right: 40px;
+    margin-left: 16px;
+}
+
+.hero article {
+    position: absolute;
+    top: 120px;   /* below the title */
+    left: 40px;
+    /* right: 40px; */
+    background-color: #f2cc70;
+    padding: 20px;
+}
+
+
+/* Style some basic, consistent margin and padding declarations for the nav, paragraph, section, and article elements. */
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* step 2 */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* step 1. noyt finished */
+.hero {
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    background-color: steelblue;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 16px;
+    justify-content: center;  
+    align-items: center;
+}
+
+.socialmedia img {
+    width: 42px;     /* try 24px, 32px, or 40px */
+    height: auto;
+}
+
+
+/* testing on audit.. */
