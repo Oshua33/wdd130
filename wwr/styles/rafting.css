@@ -1,3 +1,13 @@
+:root {
+    --primary-color: steelblue;
+    --accent1-color: #fff;
+    --secondary-color: #f2cc70;
+    /* --accent2-color: #333; */
+
+    --heading-font: "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,29 +19,23 @@ body {
     color: var(--accent1-color);
 }
 
-/* Limit the page width by combining the header, main, and footer elements and center the content on the display using an auto left-right margin  */
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
 header {
-    background-color: steelblue;
+    background-color: var(--primary-color);
 
 }
 
 nav a{
     
-    color: #fff;
+    color: var(--accent1-color);
     display: block;
     padding: 5px;
 }
-/* 
-div {
-    position: relative;
-} */
 
-/* stye with absolute  step 4 not finish*/
 article {
     position: absolute;
 }
@@ -41,7 +45,6 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-/* step 3 */
 h1 {
     position: absolute;
     top: 20px;
@@ -59,11 +62,10 @@ h1 {
     width: 100%;
     text-align: center;
     padding: 16px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--accent1-color); 
 }
 
-/* step 5 -- not finish */
 .hero article img {
     float: right;
     width: 125px;
@@ -73,15 +75,12 @@ h1 {
 
 .hero article {
     position: absolute;
-    top: 120px;   /* below the title */
+    top: 120px;  
     left: 40px;
-    /* right: 40px; */
-    background-color: #f2cc70;
+    background-color: var(--secondary-color);
     padding: 20px;
 }
 
-
-/* Style some basic, consistent margin and padding declarations for the nav, paragraph, section, and article elements. */
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
@@ -91,21 +90,19 @@ nav, p, section, article {
     text-decoration: none;
 }
 
-/* step 2 */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* step 1. noyt finished */
 .hero {
     position: relative;
 }
 
 footer {
     text-align: center;
-    background-color: steelblue;
+    background-color: var(--primary-color);
 }
 
 .socialmedia {
@@ -116,9 +113,6 @@ footer {
 }
 
 .socialmedia img {
-    width: 42px;     /* try 24px, 32px, or 40px */
+    width: 42px;   
     height: auto;
 }
-
-
-/* testing on audit.. */
