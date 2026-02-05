@@ -25,23 +25,47 @@ header, main, footer {
 
 header {
     background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 150px auto;
+    padding:1rem;
+    align-items: center
+}
 
+nav ul{
+    display: flex;
+    justify-content:flex-end;
+    gap:2rem;
+    padding: 1rem;
+    align-items: center;
+    list-style:none;
 }
 
 nav a{
-    
     color: #000;
-    display: block;
     padding: 5px;
+    text-decoration: none;
 }
 
 article {
     position: absolute;
 }
 
-h1, h2 {
+ h1, h2 {
     font-family: var(--heading-font);
     color: #000;
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+    color: #000;
+}
+
+/* hero section */
+
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
 }
 
 h1 {
@@ -51,7 +75,13 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: var(--accent1-color); */
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
  .hero h1 {
@@ -65,13 +95,6 @@ h1 {
     color: var(--accent1-color); 
 }
 
-.hero article img {
-    float: right;
-    width: 125px;
-    right: 40px;
-    margin-left: 16px;
-}
-
 .hero article {
     position: absolute;
     top: 120px;  
@@ -81,39 +104,106 @@ h1 {
     padding: 20px;
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-    color: #000;
+.hero article img {
+    float: right;
+    width: 125px;
+    right: 40px;
+    margin-left: 16px;
+}
+
+.hero article p {
+    margin: 0;
+    padding: 0;
+}
+
+/* History Section */
+
+h2 {
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.history {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap 1rem;
+    align-items: center;
+}
+
+
+.history p 
+{ 
+    font-size: 1rem; 
+    line-height: 1.6; 
+}
+
+.history img 
+{ 
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+/* Adventure section */
+
+section figure {
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+}
+
+section figure img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+section figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+/* footer section */
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    /* padding: 1rem; */
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap 1rem;
+    align-items: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+.socialmedia nav ul {
+    display: flex;
+    /* gap: 5px; */
+    justify-content: right;
+    align-items: center;
+    list-style: none;
 }
 
 .socialmedia a {
     text-decoration: none;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero {
-    position: relative;
-}
-
-footer {
-    text-align: center;
-    background-color: var(--primary-color);
-}
-
-.socialmedia {
+/* .socialmedia {
     display: flex;
     gap: 16px;
     justify-content: center;  
     align-items: center;
-}
+} */
 
 .socialmedia img {
     width: 42px;   
     height: auto;
 }
+
