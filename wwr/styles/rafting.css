@@ -68,7 +68,7 @@ nav, p, section, article {
     margin-bottom: 2rem;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -128,7 +128,7 @@ h2 {
 .history {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap 1rem;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -175,7 +175,7 @@ footer {
     margin-top: 2rem;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap 1rem;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -206,7 +206,16 @@ footer p {
     width: 42px;   
     height: auto;
 }
+
+
 /* Contact Page Styles */
+
+.contact-info-form h1{
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
 
 /* Two-column layout for map and form */
 .contact-grid {
